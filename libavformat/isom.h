@@ -356,12 +356,6 @@ typedef struct MOVContext {
     int thmb_item_id;
     int64_t idat_offset;
     int interleaved_read;
-    struct {
-        int item_id;
-        int extent_length;
-        int64_t extent_offset;
-    } *avif_info;
-    int avif_info_size;
     AVDictionary* decryption_keys;
 } MOVContext;
 
